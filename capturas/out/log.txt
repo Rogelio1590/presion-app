@@ -1,0 +1,8 @@
+
+✅ Excel de ejemplo
+✅ 1 dashboard
+✅ 2 control detalle
+✅ 3 controles
+✅ 4 registro
+
+🎉 5 tests passed.
