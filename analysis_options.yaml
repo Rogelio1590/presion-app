@@ -1,0 +1,4 @@
+# Sin paquetes de lints externos para mantener el build simple.
+analyzer:
+  exclude:
+    - build/**
