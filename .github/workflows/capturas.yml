@@ -1,0 +1,36 @@
+name: Capturas
+
+# Genera capturas de pantalla y un Excel de ejemplo y los sube a la rama "capturas".
+on:
+  push:
+    branches: [capturas]
+
+permissions:
+  contents: write
+
+jobs:
+  capturas:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.29.3'
+          channel: stable
+          cache: true
+
+      - run: flutter pub get
+
+      - name: Generar capturas y Excel
+        run: |
+          mkdir -p capturas/out
+          flutter test capturas/capturas_test.dart --update-goldens 2>&1 | tee capturas/out/log.txt || true
+
+      - name: Subir resultados
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add -f capturas/out
+          git commit -m "Capturas generadas [skip ci]" || exit 0
+          git push

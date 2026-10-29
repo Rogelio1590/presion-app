@@ -41,15 +41,19 @@ class Periodo {
 }
 
 class DashboardScreen extends StatefulWidget {
-  const DashboardScreen({super.key});
+  const DashboardScreen({super.key, this.periodoA, this.periodoB});
+
+  /// Períodos iniciales del comparador (opcional).
+  final Periodo? periodoA;
+  final Periodo? periodoB;
 
   @override
   State<DashboardScreen> createState() => _DashboardScreenState();
 }
 
 class _DashboardScreenState extends State<DashboardScreen> {
-  Periodo? _a;
-  Periodo? _b;
+  late Periodo? _a = widget.periodoA;
+  late Periodo? _b = widget.periodoB;
 
   Future<Periodo?> _elegirPeriodo() async {
     final eleccion = await showModalBottomSheet<Object>(

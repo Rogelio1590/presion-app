@@ -15,23 +15,26 @@ Future<void> main() async {
   runApp(const PresionApp());
 }
 
+ThemeData temaPresion(Brightness b) => ThemeData(
+      colorScheme: ColorScheme.fromSeed(
+        seedColor: const Color(0xFFC62828),
+        brightness: b,
+      ),
+      useMaterial3: true,
+    );
+
 class PresionApp extends StatelessWidget {
-  const PresionApp({super.key});
+  const PresionApp({super.key, this.home = const Inicio()});
+
+  final Widget home;
 
   @override
   Widget build(BuildContext context) {
-    ThemeData tema(Brightness b) => ThemeData(
-          colorScheme: ColorScheme.fromSeed(
-            seedColor: const Color(0xFFC62828),
-            brightness: b,
-          ),
-          useMaterial3: true,
-        );
     return MaterialApp(
       title: 'Presión',
       debugShowCheckedModeBanner: false,
-      theme: tema(Brightness.light),
-      darkTheme: tema(Brightness.dark),
+      theme: temaPresion(Brightness.light),
+      darkTheme: temaPresion(Brightness.dark),
       locale: const Locale('es', 'AR'),
       supportedLocales: const [Locale('es', 'AR'), Locale('es')],
       localizationsDelegates: const [
@@ -39,25 +42,27 @@ class PresionApp extends StatelessWidget {
         GlobalWidgetsLocalizations.delegate,
         GlobalCupertinoLocalizations.delegate,
       ],
-      home: const Inicio(),
+      home: home,
     );
   }
 }
 
 class Inicio extends StatefulWidget {
-  const Inicio({super.key});
+  const Inicio({super.key, this.tabInicial = 0});
+
+  final int tabInicial;
 
   @override
   State<Inicio> createState() => _InicioState();
 }
 
 class _InicioState extends State<Inicio> {
-  int _tab = 0;
+  late int _tab = widget.tabInicial;
 
   @override
   void initState() {
     super.initState();
-    estado.cargar();
+    if (!estado.cargado) estado.cargar();
   }
 
   @override

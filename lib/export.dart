@@ -101,6 +101,13 @@ Future<void> _compartir(Excel excel, String archivo, String asunto) async {
 /// Planilla de un control con el mismo formato que pide la cardióloga:
 /// Día / Turno / Presión arterial / Hora, 2 tomas de mañana y 2 de tarde.
 Future<void> exportarSerie(Serie serie, List<Toma> tomas) async {
+  await _compartir(
+      construirExcelSerie(serie, tomas),
+      'Presion_${_nombreArchivo(serie.nombre)}.xlsx',
+      'Automonitoreo de presión - ${serie.nombre}');
+}
+
+Excel construirExcelSerie(Serie serie, List<Toma> tomas) {
   final r = ResumenSerie(serie, tomas);
   final excel = _nuevoLibro('Planilla');
   final sh = excel['Planilla'];
@@ -181,9 +188,7 @@ Future<void> exportarSerie(Serie serie, List<Toma> tomas) async {
   sh.setColumnWidth(4, 40);
 
   _hojaDetalle(excel['Detalle'], r.tomas, serie: serie);
-
-  await _compartir(excel, 'Presion_${_nombreArchivo(serie.nombre)}.xlsx',
-      'Automonitoreo de presión - ${serie.nombre}');
+  return excel;
 }
 
 void _hojaDetalle(Sheet sh, List<Toma> tomas,
