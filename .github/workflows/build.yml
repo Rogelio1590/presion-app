@@ -36,13 +36,6 @@ jobs:
           sed -i 's/android:label="presion_app"/android:label="Presión"/' android/app/src/main/AndroidManifest.xml
           rm -f test/widget_test.dart
 
-      # Misma firma en todos los builds, así cada APK nuevo se instala
-      # como actualización y no se pierden los datos.
-      - name: Firma estable
-        run: |
-          mkdir -p ~/.android
-          cp ci/debug.keystore ~/.android/debug.keystore
-
       - run: flutter pub get
       - name: Ícono
         run: dart run flutter_launcher_icons
@@ -52,8 +45,19 @@ jobs:
       - name: Build APK
         run: flutter build apk --release --build-number=${{ github.run_number }} --build-name=1.0.${{ github.run_number }}
 
-      - name: Renombrar APK
-        run: cp build/app/outputs/flutter-apk/app-release.apk presion-app-${{ github.run_number }}.apk
+      # Firma SIEMPRE con la misma clave (ci/debug.keystore), así cada APK
+      # nuevo se instala como actualización y no se pierden los datos.
+      # Si la firma no coincide con la esperada, el build falla.
+      - name: Firmar APK con la clave estable
+        run: |
+          BT=$(ls -d "$ANDROID_HOME"/build-tools/* | sort -V | tail -1)
+          APK=presion-app-${{ github.run_number }}.apk
+          "$BT/apksigner" sign \
+            --ks ci/debug.keystore --ks-pass pass:android \
+            --ks-key-alias androiddebugkey --key-pass pass:android \
+            --out "$APK" build/app/outputs/flutter-apk/app-release.apk
+          "$BT/apksigner" verify --print-certs "$APK" 2>/dev/null | tee firma.txt
+          grep -qi "SHA-256 digest: c095dbb4e19871532003af2687d686a032602ed3485ea86af59728b0b2df8615" firma.txt
 
       - uses: actions/upload-artifact@v4
         with:

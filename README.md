@@ -14,7 +14,7 @@ Cada push a `main` compila la app en GitHub Actions y publica el APK en
 **Releases** (`build-N`). Desde el celu: entrar al repo → Releases → bajar
 `presion-app-N.apk` e instalar.
 
-Todos los builds se firman con la misma clave (`ci/debug.keystore`), así que
+Todos los builds (desde build-4) se firman con la misma clave (`ci/debug.keystore`), así que
 cada APK nuevo se instala como actualización sin perder los datos.
 
 ## Compilar localmente
