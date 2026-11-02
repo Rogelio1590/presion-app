@@ -1,0 +1,34 @@
+name: Diag instalación
+on:
+  push:
+    branches: [diag]
+permissions:
+  contents: write
+jobs:
+  diag:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Bajar APKs
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for t in build-3 build-5; do gh release download $t -D apks/$t -p '*.apk'; done
+          : > diag/out.txt
+      - name: Habilitar KVM
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+      - uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 34
+          arch: x86_64
+          target: google_apis
+          script: ./diag/test.sh
+      - name: Subir resultado
+        if: always()
+        run: |
+          git config user.name github-actions; git config user.email github-actions@users.noreply.github.com
+          git add -f diag/out.txt; git commit -m "diag out [skip ci]"; git push
