@@ -1,0 +1,298 @@
+BT=/usr/local/lib/android/sdk/build-tools/37.0.0
+######## build-3 apks/build-3/presion-app-3.apk 24063433
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::loadLibrary has been called by org.conscrypt.NativeLibraryUtil in an unnamed module (file:/usr/local/lib/android/sdk/build-tools/37.0.0/lib/apksigner.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+Verifies
+Verified using v1 scheme (JAR signing): true
+Verified using v2 scheme (APK Signature Scheme v2): true
+Verified using v3 scheme (APK Signature Scheme v3): false
+Verified using v3.1 scheme (APK Signature Scheme v3.1): false
+Verified using v3.2 scheme (APK Signature Scheme v3.2): false
+Verified using v4 scheme (APK Signature Scheme v4): false
+Verified for SourceStamp: false
+Number of signers: 1
+V2 Signer: certificate DN: C=US, O=Android, CN=Android Debug
+V2 Signer: certificate SHA-256 digest: ef473156706cceef8ff5c7d6be1dddeb007d69134cc8e1944cd6b35341b1086b
+V2 Signer: certificate SHA-1 digest: 0ad090eccc1a5226a434e6a934d19e4a4a406ee0
+V2 Signer: certificate MD5 digest: 0d790293ed36b02680ca43b3098bf8cc
+V2 Signer: key algorithm: RSA
+V2 Signer: key size (bits): 2048
+V2 Signer: public key SHA-256 digest: 5c515181209ad7e0c3b01e664587b7579b9192bca360d78b4c03d5da7348efc0
+V2 Signer: public key SHA-1 digest: b6ae4d2bf2bc2fb4d119cde07a8933e7281ca20c
+V2 Signer: public key MD5 digest: 7ed757056f75e22954f3f8bc3eda7c96
+WARNING: META-INF/com/android/build/gradle/app-metadata.properties not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/version-control-info.textproto not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.activity_activity.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.annotation_annotation-experimental.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.arch.core_core-runtime.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.core_core-ktx.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.core_core.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.customview_customview.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.fragment_fragment.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.interpolator_interpolator.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.lifecycle_lifecycle-livedata-core-ktx.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.lifecycle_lifecycle-livedata-core.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.lifecycle_lifecycle-livedata.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.lifecycle_lifecycle-process.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.lifecycle_lifecycle-runtime.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.lifecycle_lifecycle-viewmodel-savedstate.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.lifecycle_lifecycle-viewmodel.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.loader_loader.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.profileinstaller_profileinstaller.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.savedstate_savedstate.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.startup_startup-runtime.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.tracing_tracing.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.versionedparcelable_versionedparcelable.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.viewpager_viewpager.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.window.extensions.core_core.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.window_window-java.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.window_window.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx/annotation/annotation/LICENSE.txt not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/kotlinx_coroutines_android.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/kotlinx_coroutines_core.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/services/p0.a not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/services/p0.b not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+apksigner exit=0
+zipalign16 exit=0
+zipalign4 exit=0
+package: name='com.rogelio.presion_app' versionCode='3' versionName='1.0.3' platformBuildVersionName='15' platformBuildVersionCode='35' compileSdkVersion='35' compileSdkVersionCodename='15'
+native-code: 'arm64-v8a' 'armeabi-v7a' 'x86_64'
+       56  1981-01-01 01:01   META-INF/com/android/build/gradle/app-metadata.properties
+       46  1981-01-01 01:01   META-INF/version-control-info.textproto
+   518700  1981-01-01 01:01   classes.dex
+  7144352  1981-01-01 01:01   lib/arm64-v8a/libapp.so
+ 11057968  1981-01-01 01:01   lib/arm64-v8a/libflutter.so
+  7963220  1981-01-01 01:01   lib/armeabi-v7a/libapp.so
+  7839808  1981-01-01 01:01   lib/armeabi-v7a/libflutter.so
+  7209888  1981-01-01 01:01   lib/x86_64/libapp.so
+ 12134128  1981-01-01 01:01   lib/x86_64/libflutter.so
+        6  1981-01-01 01:01   META-INF/androidx.activity_activity.version
+        6  1981-01-01 01:01   META-INF/androidx.annotation_annotation-experimental.version
+       67  1981-01-01 01:01   META-INF/androidx.arch.core_core-runtime.version
+        7  1981-01-01 01:01   META-INF/androidx.core_core-ktx.version
+        7  1981-01-01 01:01   META-INF/androidx.core_core.version
+        6  1981-01-01 01:01   META-INF/androidx.customview_customview.version
+        6  1981-01-01 01:01   META-INF/androidx.fragment_fragment.version
+        6  1981-01-01 01:01   META-INF/androidx.interpolator_interpolator.version
+        6  1981-01-01 01:01   META-INF/androidx.lifecycle_lifecycle-livedata-core-ktx.version
+        6  1981-01-01 01:01   META-INF/androidx.lifecycle_lifecycle-livedata-core.version
+        6  1981-01-01 01:01   META-INF/androidx.lifecycle_lifecycle-livedata.version
+        6  1981-01-01 01:01   META-INF/androidx.lifecycle_lifecycle-process.version
+        6  1981-01-01 01:01   META-INF/androidx.lifecycle_lifecycle-runtime.version
+        6  1981-01-01 01:01   META-INF/androidx.lifecycle_lifecycle-viewmodel-savedstate.version
+        6  1981-01-01 01:01   META-INF/androidx.lifecycle_lifecycle-viewmodel.version
+        6  1981-01-01 01:01   META-INF/androidx.loader_loader.version
+        6  1981-01-01 01:01   META-INF/androidx.profileinstaller_profileinstaller.version
+        6  1981-01-01 01:01   META-INF/androidx.savedstate_savedstate.version
+        6  1981-01-01 01:01   META-INF/androidx.startup_startup-runtime.version
+        6  1981-01-01 01:01   META-INF/androidx.tracing_tracing.version
+        6  1981-01-01 01:01   META-INF/androidx.versionedparcelable_versionedparcelable.version
+        6  1981-01-01 01:01   META-INF/androidx.viewpager_viewpager.version
+        6  1981-01-01 01:01   META-INF/androidx.window.extensions.core_core.version
+        6  1981-01-01 01:01   META-INF/androidx.window_window-java.version
+        6  1981-01-01 01:01   META-INF/androidx.window_window.version
+    10175  1981-01-01 01:01   META-INF/androidx/annotation/annotation/LICENSE.txt
+        5  1981-01-01 01:01   META-INF/kotlinx_coroutines_android.version
+        5  1981-01-01 01:01   META-INF/kotlinx_coroutines_core.version
+        5  1981-01-01 01:01   META-INF/services/p0.a
+        5  1981-01-01 01:01   META-INF/services/p0.b
+     7864  1981-01-01 01:01   META-INF/CERT.SF
+     1167  1981-01-01 01:01   META-INF/CERT.RSA
+     7790  1981-01-01 01:01   META-INF/MANIFEST.MF
+######## build-5 apks/build-5/presion-app-5.apk 24061859
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::loadLibrary has been called by org.conscrypt.NativeLibraryUtil in an unnamed module (file:/usr/local/lib/android/sdk/build-tools/37.0.0/lib/apksigner.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+Verifies
+Verified using v1 scheme (JAR signing): true
+Verified using v2 scheme (APK Signature Scheme v2): true
+Verified using v3 scheme (APK Signature Scheme v3): true
+Verified using v3.1 scheme (APK Signature Scheme v3.1): false
+Verified using v3.2 scheme (APK Signature Scheme v3.2): false
+Verified using v4 scheme (APK Signature Scheme v4): false
+Verified for SourceStamp: false
+Number of signers: 1
+V3.0 Signer: certificate DN: CN=Android Debug, O=Android, C=US
+V3.0 Signer: certificate SHA-256 digest: c095dbb4e19871532003af2687d686a032602ed3485ea86af59728b0b2df8615
+V3.0 Signer: certificate SHA-1 digest: 930ae2095ae88388ed94eb748210ec02e25b02c8
+V3.0 Signer: certificate MD5 digest: 414f3b70dcf0e863b69db6e0f5b625ca
+V3.0 Signer: key algorithm: RSA
+V3.0 Signer: key size (bits): 2048
+V3.0 Signer: public key SHA-256 digest: 60735ec7e2ae5715c34d76acaa72cba7fb7490dbefcc5d1dfc3786a52a8c684e
+V3.0 Signer: public key SHA-1 digest: c1b830f69e1b8a56d3d0dab6f156dfe2edfa72ce
+V3.0 Signer: public key MD5 digest: b317b144ecbef994857b9ce44116c830
+WARNING: META-INF/com/android/build/gradle/app-metadata.properties not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/version-control-info.textproto not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.activity_activity.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.annotation_annotation-experimental.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.arch.core_core-runtime.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.core_core-ktx.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.core_core.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.customview_customview.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.fragment_fragment.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.interpolator_interpolator.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.lifecycle_lifecycle-livedata-core-ktx.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.lifecycle_lifecycle-livedata-core.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.lifecycle_lifecycle-livedata.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.lifecycle_lifecycle-process.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.lifecycle_lifecycle-runtime.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.lifecycle_lifecycle-viewmodel-savedstate.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.lifecycle_lifecycle-viewmodel.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.loader_loader.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.profileinstaller_profileinstaller.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.savedstate_savedstate.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.startup_startup-runtime.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.tracing_tracing.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.versionedparcelable_versionedparcelable.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.viewpager_viewpager.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.window.extensions.core_core.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.window_window-java.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.window_window.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx/annotation/annotation/LICENSE.txt not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/kotlinx_coroutines_android.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/kotlinx_coroutines_core.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/services/p0.a not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/services/p0.b not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+apksigner exit=0
+zipalign16 exit=0
+zipalign4 exit=0
+package: name='com.rogelio.presion_app' versionCode='5' versionName='1.0.5' platformBuildVersionName='15' platformBuildVersionCode='35' compileSdkVersion='35' compileSdkVersionCodename='15'
+native-code: 'arm64-v8a' 'armeabi-v7a' 'x86_64'
+       56  1981-01-01 01:01   META-INF/com/android/build/gradle/app-metadata.properties
+       46  1981-01-01 01:01   META-INF/version-control-info.textproto
+   518700  1981-01-01 01:01   classes.dex
+  7144352  1981-01-01 01:01   lib/arm64-v8a/libapp.so
+ 11057968  1981-01-01 01:01   lib/arm64-v8a/libflutter.so
+  7963220  1981-01-01 01:01   lib/armeabi-v7a/libapp.so
+  7839808  1981-01-01 01:01   lib/armeabi-v7a/libflutter.so
+  7209888  1981-01-01 01:01   lib/x86_64/libapp.so
+ 12134128  1981-01-01 01:01   lib/x86_64/libflutter.so
+        6  1981-01-01 01:01   META-INF/androidx.activity_activity.version
+        6  1981-01-01 01:01   META-INF/androidx.annotation_annotation-experimental.version
+       67  1981-01-01 01:01   META-INF/androidx.arch.core_core-runtime.version
+        7  1981-01-01 01:01   META-INF/androidx.core_core-ktx.version
+        7  1981-01-01 01:01   META-INF/androidx.core_core.version
+        6  1981-01-01 01:01   META-INF/androidx.customview_customview.version
+        6  1981-01-01 01:01   META-INF/androidx.fragment_fragment.version
+        6  1981-01-01 01:01   META-INF/androidx.interpolator_interpolator.version
+        6  1981-01-01 01:01   META-INF/androidx.lifecycle_lifecycle-livedata-core-ktx.version
+        6  1981-01-01 01:01   META-INF/androidx.lifecycle_lifecycle-livedata-core.version
+        6  1981-01-01 01:01   META-INF/androidx.lifecycle_lifecycle-livedata.version
+        6  1981-01-01 01:01   META-INF/androidx.lifecycle_lifecycle-process.version
+        6  1981-01-01 01:01   META-INF/androidx.lifecycle_lifecycle-runtime.version
+        6  1981-01-01 01:01   META-INF/androidx.lifecycle_lifecycle-viewmodel-savedstate.version
+        6  1981-01-01 01:01   META-INF/androidx.lifecycle_lifecycle-viewmodel.version
+        6  1981-01-01 01:01   META-INF/androidx.loader_loader.version
+        6  1981-01-01 01:01   META-INF/androidx.profileinstaller_profileinstaller.version
+        6  1981-01-01 01:01   META-INF/androidx.savedstate_savedstate.version
+        6  1981-01-01 01:01   META-INF/androidx.startup_startup-runtime.version
+        6  1981-01-01 01:01   META-INF/androidx.tracing_tracing.version
+        6  1981-01-01 01:01   META-INF/androidx.versionedparcelable_versionedparcelable.version
+        6  1981-01-01 01:01   META-INF/androidx.viewpager_viewpager.version
+        6  1981-01-01 01:01   META-INF/androidx.window.extensions.core_core.version
+        6  1981-01-01 01:01   META-INF/androidx.window_window-java.version
+        6  1981-01-01 01:01   META-INF/androidx.window_window.version
+    10175  1981-01-01 01:01   META-INF/androidx/annotation/annotation/LICENSE.txt
+        5  1981-01-01 01:01   META-INF/kotlinx_coroutines_android.version
+        5  1981-01-01 01:01   META-INF/kotlinx_coroutines_core.version
+        5  1981-01-01 01:01   META-INF/services/p0.a
+        5  1981-01-01 01:01   META-INF/services/p0.b
+     7860  1981-01-01 01:01   META-INF/ANDROIDD.SF
+     1223  1981-01-01 01:01   META-INF/ANDROIDD.RSA
+     7790  1981-01-01 01:01   META-INF/MANIFEST.MF
+++ ls -d /usr/local/lib/android/sdk/build-tools/34.0.0 /usr/local/lib/android/sdk/build-tools/35.0.0 /usr/local/lib/android/sdk/build-tools/35.0.1 /usr/local/lib/android/sdk/build-tools/36.0.0 /usr/local/lib/android/sdk/build-tools/36.1.0 /usr/local/lib/android/sdk/build-tools/37.0.0
+++ sort -V
+++ tail -1
++ BT=/usr/local/lib/android/sdk/build-tools/37.0.0
++ /usr/local/lib/android/sdk/build-tools/37.0.0/apksigner verify -v --print-certs apks/build-5/presion-app-5.apk
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::loadLibrary has been called by org.conscrypt.NativeLibraryUtil in an unnamed module (file:/usr/local/lib/android/sdk/build-tools/37.0.0/lib/apksigner.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+Verifies
+Verified using v1 scheme (JAR signing): true
+Verified using v2 scheme (APK Signature Scheme v2): true
+Verified using v3 scheme (APK Signature Scheme v3): true
+Verified using v3.1 scheme (APK Signature Scheme v3.1): false
+Verified using v3.2 scheme (APK Signature Scheme v3.2): false
+Verified using v4 scheme (APK Signature Scheme v4): false
+Verified for SourceStamp: false
+Number of signers: 1
+V3.0 Signer: certificate DN: CN=Android Debug, O=Android, C=US
+V3.0 Signer: certificate SHA-256 digest: c095dbb4e19871532003af2687d686a032602ed3485ea86af59728b0b2df8615
+V3.0 Signer: certificate SHA-1 digest: 930ae2095ae88388ed94eb748210ec02e25b02c8
+V3.0 Signer: certificate MD5 digest: 414f3b70dcf0e863b69db6e0f5b625ca
+V3.0 Signer: key algorithm: RSA
+V3.0 Signer: key size (bits): 2048
+V3.0 Signer: public key SHA-256 digest: 60735ec7e2ae5715c34d76acaa72cba7fb7490dbefcc5d1dfc3786a52a8c684e
+V3.0 Signer: public key SHA-1 digest: c1b830f69e1b8a56d3d0dab6f156dfe2edfa72ce
+V3.0 Signer: public key MD5 digest: b317b144ecbef994857b9ce44116c830
+WARNING: META-INF/com/android/build/gradle/app-metadata.properties not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/version-control-info.textproto not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.activity_activity.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.annotation_annotation-experimental.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.arch.core_core-runtime.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.core_core-ktx.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.core_core.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.customview_customview.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.fragment_fragment.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.interpolator_interpolator.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.lifecycle_lifecycle-livedata-core-ktx.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.lifecycle_lifecycle-livedata-core.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.lifecycle_lifecycle-livedata.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.lifecycle_lifecycle-process.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.lifecycle_lifecycle-runtime.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.lifecycle_lifecycle-viewmodel-savedstate.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.lifecycle_lifecycle-viewmodel.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.loader_loader.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.profileinstaller_profileinstaller.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.savedstate_savedstate.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.startup_startup-runtime.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.tracing_tracing.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.versionedparcelable_versionedparcelable.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.viewpager_viewpager.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.window.extensions.core_core.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.window_window-java.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx.window_window.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/androidx/annotation/annotation/LICENSE.txt not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/kotlinx_coroutines_android.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/kotlinx_coroutines_core.version not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/services/p0.a not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/services/p0.b not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
++ /usr/local/lib/android/sdk/build-tools/37.0.0/zipalign -c -v 4 apks/build-5/presion-app-5.apk
++ tail -3
+24045099 META-INF/ANDROIDD.RSA (OK - compressed)
+24046219 META-INF/MANIFEST.MF (OK - compressed)
+Verification successful
++ /usr/local/lib/android/sdk/build-tools/37.0.0/aapt2 dump badging apks/build-5/presion-app-5.apk
++ head -3
+package: name='com.rogelio.presion_app' versionCode='5' versionName='1.0.5' platformBuildVersionName='15' platformBuildVersionCode='35' compileSdkVersion='35' compileSdkVersionCodename='15'
+minSdkVersion:'21'
+targetSdkVersion:'35'
++ adb shell getprop ro.build.version.sdk
+34
++ echo '### instalar build-5 limpio'
+### instalar build-5 limpio
++ adb install apks/build-5/presion-app-5.apk
+Performing Streamed Install
+Success
++ adb shell pm list packages
++ grep presion
+package:com.rogelio.presion_app
++ adb uninstall com.rogelio.presion_app
+Success
++ echo '### instalar build-3 limpio (control)'
+### instalar build-3 limpio (control)
++ adb install apks/build-3/presion-app-3.apk
+Performing Streamed Install
+Success
++ adb uninstall com.rogelio.presion_app
+Success
++ echo '### fin'
+### fin
