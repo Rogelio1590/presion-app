@@ -1,0 +1,30 @@
+name: Diag firmas
+on:
+  push:
+    branches: [diag]
+permissions:
+  contents: write
+jobs:
+  diag:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Firmas de los releases
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p diag apks
+          BT=$(ls -d $ANDROID_HOME/build-tools/* | sort -V | tail -1)
+          {
+            echo "HOME=$HOME ANDROID_USER_HOME=$ANDROID_USER_HOME ANDROID_SDK_HOME=$ANDROID_SDK_HOME ANDROID_PREFS_ROOT=$ANDROID_PREFS_ROOT"
+            for t in build-1 build-2 build-3; do
+              gh release download $t -D apks/$t -p '*.apk' || true
+              for f in apks/$t/*.apk; do
+                echo "== $t $f"
+                $BT/apksigner verify --print-certs "$f" | grep -E "SHA-256|DN"
+                $BT/aapt2 dump badging "$f" | head -1
+              done
+            done
+          } > diag/firmas.txt 2>&1
+          git config user.name github-actions; git config user.email github-actions@users.noreply.github.com
+          git add -f diag; git commit -m "diag [skip ci]"; git push
